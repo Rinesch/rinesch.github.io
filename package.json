@@ -1,7 +1,7 @@
 {
-  "name": "rinesch.ch",
+  "name": "rinesch.github.io",
   "version": "1.0.0",
-  "author": "Rinesch Murugathas (rinesch.ch)",
+  "author": "Rinesch Murugathas (rinesch.github.io)",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.0",
