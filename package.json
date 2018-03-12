@@ -1,0 +1,22 @@
+{
+  "name": "rinesch.ch",
+  "version": "1.0.0",
+  "author": "Rinesch Murugathas (rinesch.ch)",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "connect-livereload": "^0.5.2",
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-babel": "^7.0.0",
+    "gulp-csso": "^1.1.0",
+    "gulp-imagemin": "^2.1.0",
+    "gulp-newer": "^0.5.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^1.5.4",
+    "imagemin-pngquant": "^4.2.2",
+    "opn": "^1.0.1",
+    "tiny-lr": "^0.1.5"
+  }
+}
