@@ -1,19 +1,30 @@
 url: https://rinesch.github.io
 permalink: :categories/:title/
 description: "Sample short description"
-
 timezone: Europe/Zurich
-
 title: Rinesch Murugathas
+
+markdown: kramdown
 
 links:
   - title: Home
     url: /
   - title: Portfolio
-    url: /portfolio/
+    url: /portfolio
   - title: About
-    url: /about/
+    url: /about
 
-markdown: kramdown
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+  -
+    scope:
+      path: portfolio
+      type: posts
+    values:
+      layout: post
 
 exclude: [ 'node_modules', 'gulpfile.js', 'package.json', 'LICENSE.md', 'README.md' ]

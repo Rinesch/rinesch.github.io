@@ -1,11 +1,15 @@
+{% capture title %}
+  {% if page.title %}{{ page.title }} - {% endif %}Rinesch Murugathas
+{% endcapture %}
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  <meta name="apple-mobile-web-app-title" content="Rinesch Murugathas">
+  <meta name="author" content="Rinesch Murugathas">
+  <meta name="description" content="{{ description }}">
 
   <link rel="stylesheet" href="{{ "" | relative_url }}">
-
-  {% if jekyll.environment == 'production' and site.google_analytics %}
-    {% include google-analytics.html %}
-  {% endif %}
 </head>
