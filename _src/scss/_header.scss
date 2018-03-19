@@ -1,0 +1,56 @@
+.site-heading {
+  margin: 0;
+  text-align: center;
+  padding-top: 0.5em;
+
+  a {
+    text-decoration: none;
+    font-size: 0.75em;
+    vertical-align: middle;
+
+    @include at-least(m) {
+      font-size: 1em;
+    }
+  }
+
+  @include at-least(l) {
+    padding-top: 0;
+    text-align: left;
+  }
+}
+
+.site-nav {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+
+  @include at-least(m) {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+
+  @include at-least(l) {
+    text-align: left;
+    padding-top: 2.4375em;
+    padding-bottom: 2.4375em;
+  }
+}
+
+.site-nav-item {
+  text-decoration: none;
+  padding: 0.5em 0;
+
+  @include at-least(m) {
+    padding: 0;
+  };
+}
+
+.site-logo {
+  height: 3em;
+  vertical-align: middle;
+
+  @include at-least(l) {
+    height: 3em;
+  }
+}

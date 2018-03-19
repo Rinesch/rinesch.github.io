@@ -1,0 +1,10 @@
+body {
+  margin: 0.5em;
+  background-color: $default-body;
+  background-image: url("/assets/img/pattern.png");
+  background-repeat: repeat;
+
+  @include at-least(l) {
+    margin: 1em;
+  }
+}

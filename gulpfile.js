@@ -83,6 +83,7 @@ gulp.task('server', function () {
 
 gulp.task('watch', function () {
   gulp.watch([ '_config.yml', '*.html', '_includes/*.html', '_layouts/*.html', 'portfolio/*.html', 'portfolio/_posts/*.md' ], [ 'jekyll' ])
+  gulp.watch('_src/scss/*.scss', [ 'styles' ])
   gulp.watch('_src/img/**/*.{jpg,png}', [ 'images' ])
   gulp.watch('_src/img/**/*.svg', [ 'vectors' ])
   gulp.watch([ '_site/assets/js/*.js', '_site/assets/css/*.css', '_site/assets/img/**/*.*', '_site/**/*.html' ], notifyLivereload)
