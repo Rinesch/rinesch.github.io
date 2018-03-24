@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Entypo";
+  src: url("/assets/css/fonts/Entypo.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon] {
+  font-family: "Entypo";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -0.1em;
+  -webkit-font-smoothing: antialiased;
+}
+
+[data-icon="github"]::before    { content: "\e900"; }
+[data-icon="mail"]::before      { content: "\e901"; }
+[data-icon="dribbble"]::before  { content: "\e902"; }
+[data-icon="behance"]::before   { content: "\e903"; }
+[data-icon="twitter"]::before   { content: "\e904"; }

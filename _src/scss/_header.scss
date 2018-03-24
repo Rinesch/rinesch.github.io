@@ -4,13 +4,7 @@
   padding-top: 0.5em;
 
   a {
-    text-decoration: none;
-    font-size: 0.75em;
     vertical-align: middle;
-
-    @include at-least(m) {
-      font-size: 1em;
-    }
   }
 
   @include at-least(l) {
@@ -19,11 +13,26 @@
   }
 }
 
+.site-title {
+  text-decoration: none;
+  color: white;
+  font-size: .75em;
+  font-weight: 400;
+
+  @include at-least(l) {
+    font-size: 1em;
+  };
+}
+
 .site-nav {
   list-style: none;
   text-align: center;
   padding: 0;
   margin: 0;
+
+  li {
+    text-align: center;
+  }
 
   @include at-least(m) {
     padding-top: 1.5em;
@@ -38,19 +47,73 @@
 }
 
 .site-nav-item {
+  position: relative;
   text-decoration: none;
+  text-align: center;
+  color: white;
+  cursor: pointer;
   padding: 0.5em 0;
 
   @include at-least(m) {
     padding: 0;
   };
+
+  @include at-least(l) {
+    font-family: "Roboto Condensed";
+    font-size: 1.2em;
+  }
+}
+
+.site-nav-item:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.site-nav-item:hover {
+  @include at-least(l) {
+    color: white;
+  }
+}
+
+.site-nav-item:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.site-nav-item.is-active {
+  cursor: default;
+  font-weight: 700;
+}
+
+.site-nav-item.is-active:before {
+  visibility: visible;
+  transform: scaleX(1);
 }
 
 .site-logo {
-  height: 3em;
+  height: 2.5em;
   vertical-align: middle;
 
+  .site-heading:hover & {
+    animation: wiggle .2s ease-in-out;
+  }
+
   @include at-least(l) {
+    transition-duration: .2s;
     height: 3em;
+  }
+}
+
+@keyframes wiggle {
+  50% {
+    transform: rotate(10deg);
   }
 }

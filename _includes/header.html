@@ -1,21 +1,21 @@
-<header>
+<header class="section-header">
 
   <div data-grid="gutterless">
 
     <div data-col="L1-2">
       <h1 class="site-heading">
-        <a href="{{ "/" }}"><img class="site-logo" src="/assets/img/logo.svg" alt="logo" /></a>
-        <a href="{{ "/" }}"> rinesch murugathas</a>
+        <a href="{{ "/" }}"><img class="site-logo wiggle" src="/assets/img/logo.svg" alt="logo" /></a>
+        <a href="{{ "/" }}" class="site-title"> rinesch murugathas</a>
       </h1>
     </div>
 
     <nav data-col="L1-2">
       <ul class="site-nav" data-grid="gutterless">
-        <li>
-          {% for link in site.links %}
-            <a class="site-nav-item" href="{{ link.url }}" title="{{ link.title }}" data-col="M1-4">{{ link.title }}</a>
-          {% endfor %}
-        </li>
+        {% for link in site.links %}
+          <li data-col="M1-4">
+            <a class="site-nav-item {% if link.url == page.url %} is-active {% endif %}" href="{{ link.url }}" title="{{ link.title }}" >{{ link.title }}</a>
+          </li>
+        {% endfor %}
       </ul>
     </nav>
 

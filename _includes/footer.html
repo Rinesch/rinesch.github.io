@@ -1,35 +1,43 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+<footer class="section-footer">
+  <div data-grid="gutterless">
+    <div data-col="L1-2">
+      <ul class="social-items-list">
+        <li>
+          <a href="mailto:rinesch.murugathas@gmail.com" title="Mail me" target="_blank">
+            <div class="circle mail">
+              <span data-icon="mail"></span>
+            </div>
+          </a>
+        </li>
 
-  <div class="wrapper">
+        <li>
+          <a href="https://twitter.com/rineschthas" title="Read my tweets" target="_blank">
+            <div class="circle twitter">
+              <span data-icon="twitter"></span>
+            </div>
+          </a>
+        </li>
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+        <li>
+          <a href="https://dribbble.com/rinesch" title="View my shots" target="_blank">
+            <div class="circle dribbble">
+              <span data-icon="dribbble"></span>
+            </div>
+          </a>
+        </li>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
-      </div>
+        <li>
+          <a href="https://github.com/Rinesch" title="View my repositories" target="_blank">
+            <div class="circle github">
+              <span data-icon="github"></span>
+            </div>
+          </a>
+        </li>
+      </ul>
     </div>
 
+    <div data-col="L1-2">
+      <p class="footer-copyright">Website design and content © 2018 Rinesch Murugathas</p>
+    </div>
   </div>
-
 </footer>

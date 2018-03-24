@@ -10,11 +10,11 @@ links:
   - title: Home
     url: /
   - title: Portfolio
-    url: /portfolio
+    url: /portfolio/
   - title: About
-    url: /about
+    url: /about/
   - title: Contact
-    url: /
+    url: /contact/
 
 defaults:
   -

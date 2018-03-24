@@ -1,0 +1,45 @@
+.btn-layout {
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  width: 22em;
+  margin: .5em 0;
+  text-decoration: none;
+  color: $default-body;
+  background-color: white;
+  padding: 1em 0;
+  border: .4em solid white;
+  border-radius: 50vh;
+
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
+
+  @include at-least(m) {
+    margin: 0;
+    background-color: transparent;
+    color: white;
+    transition-duration: .2s;
+  }
+}
+
+.btn:hover {
+  @include at-least(m) {
+    background-color: white;
+    color: $default-body;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2);
+    transform: translateY(2px);
+  };
+}
+
+.btn:active {
+  @include at-least(m) {
+    box-shadow: 0 0 0 rgba(0,0,0,0.2);
+    transform: translateY(3px);
+  };
+}
+
+.btn-label {
+  font-weight: 500;
+  font-size: 2em;
+}
