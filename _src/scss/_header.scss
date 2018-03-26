@@ -1,7 +1,7 @@
 .site-heading {
   margin: 0;
   text-align: center;
-  padding-top: 0.5em;
+  padding-top: 1em;
 
   a {
     vertical-align: middle;
@@ -21,17 +21,19 @@
 
   @include at-least(l) {
     font-size: 1em;
-  };
+  }
 }
 
 .site-nav {
   list-style: none;
   text-align: center;
-  padding: 0;
+  padding: 0 1em;
+  padding-top: 2em;
   margin: 0;
 
   li {
     text-align: center;
+    width: 25%;
   }
 
   @include at-least(m) {
@@ -49,17 +51,19 @@
 .site-nav-item {
   position: relative;
   text-decoration: none;
+  text-transform: uppercase;
   text-align: center;
+  font-family: "Roboto Condensed";
+  font-size: 3vh;
   color: white;
   cursor: pointer;
-  padding: 0.5em 0;
+  padding: 0;
 
   @include at-least(m) {
     padding: 0;
-  };
+  }
 
   @include at-least(l) {
-    font-family: "Roboto Condensed";
     font-size: 1.2em;
   }
 }

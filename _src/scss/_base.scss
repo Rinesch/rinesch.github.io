@@ -35,39 +35,71 @@ p {
 }
 
 .section-header {
-  height: 10vh;
+
+  @include at-least(m) {
+    height: 10vh;
+  }
 }
 
 .section-main {
-  height: 75vh;
-  vertical-align: middle;
+
+  @include at-least(m) {
+    height: 75vh;
+
+  }
 }
 
 .section-intro {
-  height: 45vh;
+  padding: 1em 0;
+
+  @include at-least(m) {
+    padding: 0;
+    height: 45vh;
+  }
 }
 
 .section-btns {
-  height: 30vh;
+ padding: 1em 0;
+
+  @include at-least(m) {
+    padding: 0;
+    height: 30vh;
+  }
 }
 
 .section-footer {
-  height: 10vh;
+  padding: 1em 0;
+
+  @include at-least(m) {
+    padding: 0;
+    height: 10vh;
+  }
 }
 
 .site-intro, .site-intro-sub {
   text-align: center;
   margin: 0;
-  vertical-align: middle;
 }
 
 .site-intro {
-  padding-top: 1em;
   font-family: "Roboto Condensed";
-  font-size: 7em;
+  padding-top: .5em;
+  font-size: 8.5vh;
+
+  @include at-least(l) {
+    padding-top: 1em;
+    font-size: 7em;
+  }
 }
 
 .site-intro-sub {
-  font-size: 3em;
+  font-size: 3vh;
   font-weight: 400;
+  padding-top: 1em;
+
+  @include at-least(l) {
+    font-size: 3em;
+    font-weight: 400;
+    padding-top: 0;
+  }
 }
