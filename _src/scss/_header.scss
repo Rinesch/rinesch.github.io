@@ -16,7 +16,7 @@
 .site-title {
   text-decoration: none;
   color: white;
-  font-size: .75em;
+  font-size: 6vw;
   font-weight: 400;
 
   @include at-least(l) {
@@ -54,7 +54,7 @@
   text-transform: uppercase;
   text-align: center;
   font-family: "Roboto Condensed";
-  font-size: 3vh;
+  font-size: 4.5vw;
   color: white;
   cursor: pointer;
   padding: 0;
@@ -103,7 +103,7 @@
 }
 
 .site-logo {
-  height: 2.5em;
+  height: 20vw;
   vertical-align: middle;
 
   .site-heading:hover & {

@@ -50,7 +50,7 @@ p {
 }
 
 .section-intro {
-  padding: 1em 0;
+  padding-bottom: 1em;
 
   @include at-least(m) {
     padding: 0;
@@ -84,7 +84,7 @@ p {
 .site-intro {
   font-family: "Roboto Condensed";
   padding-top: .5em;
-  font-size: 8.5vh;
+  font-size: 15vw;
 
   @include at-least(l) {
     padding-top: 1em;
@@ -93,7 +93,7 @@ p {
 }
 
 .site-intro-sub {
-  font-size: 3vh;
+  font-size: 5vw;
   font-weight: 400;
   padding-top: 1em;
 

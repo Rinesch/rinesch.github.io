@@ -4,7 +4,7 @@
 
 .btn {
   display: inline-block;
-  width: 22em;
+  width: 80vw;
   margin: .5em 0;
   text-decoration: none;
   color: $default-body;
@@ -17,6 +17,7 @@
 
   @include at-least(m) {
     margin: 0;
+    width: 25vw;
     background-color: transparent;
     color: white;
     transition-duration: .2s;
