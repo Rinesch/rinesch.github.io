@@ -7,7 +7,7 @@
 
     {% include header.html %}
 
-    <main class="section-main">
+    <main class="section-main {% if page.url == "/portfolio/" %} not-full {% endif %}">
       {{ content }}
     </main>
 
