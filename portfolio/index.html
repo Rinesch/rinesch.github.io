@@ -4,29 +4,37 @@ title: Portfolio
 permalink: /portfolio/
 ---
 
-<section class="portfolio-recent">
-  <h1 class="portfolio-title">Recent Projects</h1>
+<section>
+  <h1 class="portfolio-title portfolio-recent">RECENT PROJECTS</h1>
 
   <div data-grid="gutterless">
-    <div data-col="L1-3">
-      Test
-    </div>
+    {% for post in site.posts limit:3 %}
+      <div data-col="L1-3">
+        <div class="card">
 
-    <div data-col="L1-3">
-      Test
-    </div>
+          <div class="card-image">
+            <img src="/assets/img/sample4.jpg" alt="sample" />
+          </div>
 
-    <div data-col="L1-3">
-      Test
-    </div>
+          <div class="card-content">
+            <span class="card-title">{{ post.title }}</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus suscipit sapien, vitae luctus libero rutrum vel. Nullam ut augue neque.</p>
+          </div>
+
+          <div class="card-action">
+            <a href="{{ post.url }}">Read more</a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
   </div>
 </section>
 
-<section class="portfolio-all">
-  <h1 class="portfolio-title">All Projects</h1>
+<section>
+  <h1 class="portfolio-title">ALL PROJECTS</h1>
 
   <div data-grid="gutterless">
-    {% for post in site.posts %}
+    {% for post in site.posts offset:3 %}
       <div data-col="L1-3">
         <div class="card">
 

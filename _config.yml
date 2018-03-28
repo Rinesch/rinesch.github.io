@@ -13,8 +13,6 @@ links:
     url: /portfolio/
   - title: About
     url: /about/
-  - title: Contact
-    url: /contact/
 
 defaults:
   -
