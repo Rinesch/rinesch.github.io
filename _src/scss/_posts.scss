@@ -1,0 +1,37 @@
+.post-background {
+  margin: 3vw 10vw;
+  background-color: $post-background;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.post {
+  max-width: 40em;
+  margin: 0 auto;
+  padding: 2em 0;
+  color: $text-color;
+  line-height: 1.5;
+  font-size: 125%;
+}
+
+.post-header {
+  padding: 2em;
+  background-color: $link-color;
+  color: white;
+  border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+}
+
+.post-title {
+  margin: 0;
+  font-family: "Roboto Condensed";
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+.post-intro {
+
+}
+
+.post-content {
+
+}

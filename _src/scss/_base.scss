@@ -49,6 +49,15 @@ p {
   }
 }
 
+.section-footer {
+  padding: 1em 0;
+
+  @include at-least(m) {
+    padding: 0;
+    height: 10vh;
+  }
+}
+
 .section-intro {
   padding-bottom: 1em;
 
@@ -64,15 +73,6 @@ p {
   @include at-least(m) {
     padding: 0;
     height: 30vh;
-  }
-}
-
-.section-footer {
-  padding: 1em 0;
-
-  @include at-least(m) {
-    padding: 0;
-    height: 10vh;
   }
 }
 

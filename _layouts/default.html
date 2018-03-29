@@ -7,7 +7,7 @@
 
     {% include header.html %}
 
-    <main class="section-main {% if page.url == "/portfolio/" %} not-full {% endif %}">
+    <main class="section-main {% if page.url == "/portfolio/" or "/portfolio/*/" %} not-full {% endif %}">
       {{ content }}
     </main>
 
@@ -18,12 +18,12 @@
         <div class="close">
           <a href="#">&times;</a>
         </div>
-        <div class="modal-left" data-col="L1-2">
+        <div data-col="L1-2">
           <a class="contact-link" href="mailto:rinesch.murugathas@gmail.com">
             <h1><span data-icon="mail"></span> Mail</h1>
           </a>
         </div>
-        <div class="model-right" data-col="L1-2">
+        <div data-col="L1-2">
           <a class="contact-link" href="https://twitter.com/rineschthas" target="_blank">
             <h1><span data-icon="twitter"></span> Twitter</h1>
           </a>
