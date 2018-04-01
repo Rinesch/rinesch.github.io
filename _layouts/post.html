@@ -3,14 +3,17 @@ layout: default
 categories: :title
 ---
 <article class="post-background">
-  <div class="post-header">
+  <div class="post-header" data-grid="gutterless">
     <h1 class="post-title">{{ page.title | escape }}</h1>
+    <div class="post-metadata" data-col="L1-2">
+      <div class="post-duration">Duration: {{ page.duration }}</div>
+      <div class="post-team">Team: {{ page.team }}</div>
+    </div>
   </div>
 
   <div class="post">
-    <p class="post-intro">{{ page.excerpt | remove: "<p>" | remove: "</p>" }}</p>
     <div class="post-content">
-      {{ content | remove: page.excerpt }}
+      {{ content }}
     </div>
   </div>
 </article>

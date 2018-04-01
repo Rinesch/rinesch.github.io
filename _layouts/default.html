@@ -7,13 +7,13 @@
 
     {% include header.html %}
 
-    <main class="section-main {% if page.url == "/portfolio/" or "/portfolio/*/" %} not-full {% endif %}">
+    <main class="section-main {% if page.url == "/portfolio/" or page.match == "post" %} not-full {% endif %}">
       {{ content }}
     </main>
 
     {% include footer.html %}
 
-    <div id="modal">
+    <div id="contact">
       <div class="modal-content" data-grid="gutterless">
         <div class="close">
           <a href="#">&times;</a>

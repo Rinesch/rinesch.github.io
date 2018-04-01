@@ -1,4 +1,4 @@
-<header class="section-header {% if page.url == "/portfolio/" or "/portfolio/*/" %} not-full portfolio-header {% endif %}">
+<header class="section-header {% if page.url == "/portfolio/" or page.match == "post" %} not-full portfolio-header {% endif %}">
 
   <div data-grid="gutterless">
 
@@ -17,7 +17,7 @@
           </li>
         {% endfor %}
           <li data-col="M1-4">
-            <a class="site-nav-item" href="#modal" title="Contact" >Contact</a>
+            <a class="site-nav-item" href="#contact" title="Contact" >Contact</a>
           </li>
       </ul>
     </nav>

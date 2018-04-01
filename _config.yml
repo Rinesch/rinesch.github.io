@@ -26,5 +26,6 @@ defaults:
       type: posts
     values:
       layout: post
+      match: post
 
 exclude: [ 'node_modules', 'gulpfile.js', 'package.json', 'LICENSE.md', 'README.md' ]

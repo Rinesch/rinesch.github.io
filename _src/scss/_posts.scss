@@ -1,8 +1,12 @@
 .post-background {
-  margin: 3vw 10vw;
+  margin: 3vw 0;
   background-color: $post-background;
-  border-radius: 2px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+
+  @include at-least(l) {
+    margin: 3vw 10vw;
+    border-radius: 2px;
+  };
 }
 
 .post {
@@ -12,26 +16,50 @@
   color: $text-color;
   line-height: 1.5;
   font-size: 125%;
+
+  @include at-least(l) {
+    padding-bottom: 5em;
+  };
 }
 
 .post-header {
-  padding: 2em;
+  padding: 1em;
   background-color: $link-color;
   color: white;
-  border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+  border-bottom: 1px solid darken($link-color, 5%);
+
+  @include at-least(l) {
+    padding: 2em;
+    padding-right: 2em;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+  };
 }
 
 .post-title {
   margin: 0;
   font-family: "Roboto Condensed";
-  font-size: 3em;
+  font-size: 10vw;
   text-transform: uppercase;
+
+  @include at-least(l) {
+    font-size: 3.5em;
+    margin-bottom: .25em;
+  };
 }
 
-.post-intro {
+.post-metadata {
+  font-size: 4vw;
 
+  @include at-least(l) {
+    font-size: 1.25em;
+  };
 }
 
 .post-content {
+  margin: 0 1em;
 
+  @include at-least(l) {
+    margin: 0;
+  }
 }

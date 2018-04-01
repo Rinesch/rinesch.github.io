@@ -108,7 +108,7 @@ p {
   height: auto;
 }
 
-#modal {
+#contact {
   visibility: hidden;
   position: fixed;
   opacity: 0;
@@ -133,10 +133,10 @@ p {
 
   @include at-least(m) {
     height: 80vh;
-  };
+  }
 }
 
-#modal:target {
+#contact:target {
   opacity: 1;
   visibility: visible;
 }
