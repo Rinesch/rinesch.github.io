@@ -9,6 +9,11 @@
   };
 }
 
+.tab {
+  display: inline-block;
+  width: 5em;
+}
+
 .post {
   max-width: 40em;
   margin: 0 auto;
@@ -61,5 +66,53 @@
 
   @include at-least(l) {
     margin: 0;
+  }
+}
+
+.tools-title {
+  color: white;
+  background-color: $link-color;
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed";
+  font-size: 1.5em;
+  border-bottom: 1px solid darken($link-color, 5%);
+
+  @include at-least(l) {
+    text-align: left;
+  }
+}
+
+.tools-list {
+  list-style: none;
+  padding: 2em;
+  margin: 0;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    float: none;
+    padding: 0 1em;
+  }
+}
+
+.tools-img {
+  height: 10vw;
+
+  @include at-least(l) {
+    height: 5em;
+  }
+}
+
+.tools-name {
+  color: $text-color;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed";
+  font-size: 4vw;
+
+  @include at-least(l) {
+    font-size: 1em;
   }
 }

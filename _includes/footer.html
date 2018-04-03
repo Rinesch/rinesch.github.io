@@ -1,4 +1,4 @@
-<footer class="section-footer {% if page.url == "/portfolio/" or page.match == "post" %} not-full portfolio-footer {% endif %}">
+<footer class="section-footer {% if page.url == "/portfolio/" or page.url == "/about/" or page.match == "post" %} not-full portfolio-footer {% endif %}">
   <div data-grid="gutterless">
     <div data-col="L1-2">
       <ul class="social-items-list">
@@ -37,7 +37,7 @@
     </div>
 
     <div data-col="L1-2">
-      <p class="footer-copyright">Website design and content © 2018 Rinesch Murugathas</p>
+      <p class="footer-copyright">Website design and content © <script>document.write(new Date().getFullYear())</script> Rinesch Murugathas</p>
     </div>
   </div>
 </footer>

@@ -6,8 +6,8 @@ categories: :title
   <div class="post-header" data-grid="gutterless">
     <h1 class="post-title">{{ page.title | escape }}</h1>
     <div class="post-metadata" data-col="L1-2">
-      <div class="post-duration">Duration: {{ page.duration }}</div>
-      <div class="post-team">Team: {{ page.team }}</div>
+      <div><span class="tab">Duration: </span>{{ page.duration }}</div>
+      <div><span class="tab">Team: </span>{{ page.team }}</div>
     </div>
   </div>
 
@@ -15,5 +15,17 @@ categories: :title
     <div class="post-content">
       {{ content }}
     </div>
+  </div>
+
+  <div class="tools">
+    <h1 class="tools-title">Tools used</h1>
+    <ul class="tools-list">
+      {% for tool in page.tools %}
+        <li>
+          <img class="tools-img" src="/assets/img/tools/{{tool}}.png" alt="{{tool}}" title="{{tool}}"/>
+          <div class="tools-name">{{tool}}</div>
+        </li>
+      {% endfor %}
+    </ul>
   </div>
 </article>
