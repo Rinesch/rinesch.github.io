@@ -4,12 +4,12 @@ title: Portfolio
 permalink: /portfolio/
 ---
 
-<section>
+<section class="portfolio-cards">
   <h1 class="portfolio-title portfolio-recent">RECENT PROJECTS</h1>
 
-  <div data-grid="gutterless">
+  <div data-grid>
     {% for post in site.posts limit:3 %}
-      <div data-col="L1-3">
+      <div data-col="L1-3 M1-3">
         <div class="card">
 
           <div class="card-image">
@@ -22,7 +22,7 @@ permalink: /portfolio/
           </div>
 
           <div class="card-action">
-            <a href="{{ post.url }}">Read more</a>
+            <a class="link" href="{{ post.url }}">Read more</a>
           </div>
         </div>
       </div>
@@ -30,12 +30,12 @@ permalink: /portfolio/
   </div>
 </section>
 
-<section>
+<section class="portfolio-cards">
   <h1 class="portfolio-title">ALL PROJECTS</h1>
 
-  <div data-grid="gutterless">
+  <div data-grid>
     {% for post in site.posts offset:3 %}
-      <div data-col="L1-3">
+      <div data-col="L1-3 M1-3">
         <div class="card">
 
           <div class="card-image">
@@ -48,7 +48,7 @@ permalink: /portfolio/
           </div>
 
           <div class="card-action">
-            <a href="{{ post.url }}">Read more</a>
+            <a class="link" href="{{ post.url }}">Read more</a>
           </div>
         </div>
       </div>

@@ -19,6 +19,10 @@
   font-size: 6vw;
   font-weight: 400;
 
+  @include at-least(m) {
+    font-size: 5vw;
+  }
+
   @include at-least(l) {
     font-size: 1em;
   }
@@ -37,8 +41,8 @@
   }
 
   @include at-least(m) {
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+    padding-top: 3em;
+    padding-bottom: 3em;
   }
 
   @include at-least(l) {
@@ -108,6 +112,10 @@
 
   .site-heading:hover & {
     animation: wiggle .2s ease-in-out;
+  }
+
+  @include at-least(m) {
+    height: 15vw;
   }
 
   @include at-least(l) {

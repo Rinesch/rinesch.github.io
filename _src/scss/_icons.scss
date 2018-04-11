@@ -17,8 +17,9 @@
   -webkit-font-smoothing: antialiased;
 }
 
-[data-icon="github"]::before    { content: "\e900"; }
-[data-icon="mail"]::before      { content: "\e901"; }
-[data-icon="dribbble"]::before  { content: "\e902"; }
-[data-icon="behance"]::before   { content: "\e903"; }
-[data-icon="twitter"]::before   { content: "\e904"; }
+[data-icon="github"]::before       { content: "\e900"; }
+[data-icon="mail"]::before         { content: "\e901"; }
+[data-icon="dribbble"]::before     { content: "\e902"; }
+[data-icon="behance"]::before      { content: "\e903"; }
+[data-icon="twitter"]::before      { content: "\e904"; }
+[data-icon="graduation"]::before   { content: "\e905"; }

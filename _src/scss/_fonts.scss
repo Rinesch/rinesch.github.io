@@ -38,7 +38,7 @@
        url('/assets/css/fonts/roboto-condensed-v16-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-body {
-  font-family: "Roboto";
+html {
+  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
   color: white;
 }

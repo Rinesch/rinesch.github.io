@@ -21,6 +21,10 @@ p {
   margin: 0;
 }
 
+::selection {
+  background-color: rgba($link-color, 0.2);
+}
+
 .bg-pattern {
   background-image: url("/assets/img/bg-pattern.png");
   background-size: 150px;
@@ -34,16 +38,27 @@ p {
   z-index: -1;
 }
 
+.link {
+  color: $link-color;
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom-color: $link-color;
+    transition-duration: .15s;
+  }
+}
+
 .section-header {
 
-  @include at-least(m) {
+  @include at-least(l) {
     height: 10vh;
   }
 }
 
 .section-main {
 
-  @include at-least(m) {
+  @include at-least(l) {
     height: 75vh;
 
   }
@@ -52,7 +67,7 @@ p {
 .section-footer {
   padding: 1em 0;
 
-  @include at-least(m) {
+  @include at-least(l) {
     padding: 0;
     height: 10vh;
   }
@@ -61,16 +76,21 @@ p {
 .section-intro {
   padding-bottom: 1em;
 
-  @include at-least(m) {
+  @include at-least(l) {
     padding: 0;
+    padding-top: 7em;
     height: 45vh;
   }
 }
 
 .section-btns {
- padding: 1em 0;
+  padding: 1em 0;
 
   @include at-least(m) {
+    padding: 3em 0;
+  }
+
+  @include at-least(l) {
     padding: 0;
     height: 30vh;
   }
@@ -86,9 +106,12 @@ p {
   padding-top: .5em;
   font-size: 15vw;
 
+  @include at-least(m) {
+    padding-top: 0;
+  }
+
   @include at-least(l) {
-    padding-top: 1em;
-    font-size: 7em;
+    font-size: 8vw;
   }
 }
 
@@ -98,7 +121,7 @@ p {
   padding-top: 1em;
 
   @include at-least(l) {
-    font-size: 3em;
+    font-size: 4vw;
     font-weight: 400;
     padding-top: 0;
   }
@@ -131,7 +154,7 @@ p {
   width: 80%;
   border-radius: 5px;
 
-  @include at-least(m) {
+  @include at-least(l) {
     height: 80vh;
   }
 }
@@ -173,13 +196,13 @@ p {
     margin: 0;
     padding: 10vh 0;
 
-    @include at-least(m){
-      font-size: 6em;
+    @include at-least(l){
+      font-size: 5em;
       padding: 23vh 0;
 
       &:hover {
         color: white;
-        font-size: 6.5em;
+        font-size: 5.5em;
       }
     }
   }

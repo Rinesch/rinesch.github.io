@@ -3,7 +3,7 @@
   text-align: center;
   padding: 2em 0;
 
-  @include at-least(m) {
+  @include at-least(l) {
     padding-top: 2em;
     text-align: right;
   }
@@ -27,7 +27,7 @@
     }
   }
 
-  @include at-least(m) {
+  @include at-least(l) {
     font-size: 1.5em;
 
     li {
@@ -55,7 +55,7 @@
     transform: translate(-50%, -50%);
   }
 
-  @include at-least(m) {
+  @include at-least(l) {
     background-color: transparent;
     color: white;
     width: 2.25em;
@@ -68,42 +68,42 @@
 }
 
 .circle:hover {
-  @include at-least(m) {
+  @include at-least(l) {
     box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2);
     transform: translateY(2px);
   }
 }
 
 .mail:hover {
-  @include at-least(m) {
+  @include at-least(l) {
     background-color: white;
     color: $default-body;
   }
 }
 
 .twitter:hover {
-  @include at-least(m) {
+  @include at-least(l) {
     background-color: #1da1f2;
     border-color: #1da1f2;
   }
 }
 
 .dribbble:hover {
-  @include at-least(m) {
+  @include at-least(l) {
     background-color: #ea4c89;
     border-color: #ea4c89;
   }
 }
 
 .github:hover {
-  @include at-least(m) {
+  @include at-least(l) {
     background-color: #24292e;
     border-color: #24292e;
   }
 }
 
 .circle:active {
-  @include at-least(m) {
+  @include at-least(l) {
     box-shadow: 0 0 0 rgba(0,0,0,0.2);
     transform: translateY(3px);
   }

@@ -5,7 +5,7 @@
 
   @include at-least(l) {
     margin: 3vw 10vw;
-    border-radius: 2px;
+    border-radius: 5px;
   };
 }
 
@@ -17,14 +17,10 @@
 .post {
   max-width: 40em;
   margin: 0 auto;
-  padding: 2em 0;
+  padding: 3em 0;
   color: $text-color;
   line-height: 1.5;
   font-size: 125%;
-
-  @include at-least(l) {
-    padding-bottom: 5em;
-  };
 }
 
 .post-header {
@@ -36,8 +32,8 @@
   @include at-least(l) {
     padding: 2em;
     padding-right: 2em;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
   };
 }
 
@@ -63,10 +59,6 @@
 
 .post-content {
   margin: 0 1em;
-
-  @include at-least(l) {
-    margin: 0;
-  }
 }
 
 .tools-title {
@@ -101,6 +93,10 @@
 .tools-img {
   height: 10vw;
 
+  @include at-least(m) {
+    height: 7vw;
+  }
+
   @include at-least(l) {
     height: 5em;
   }
@@ -111,6 +107,10 @@
   text-transform: uppercase;
   font-family: "Roboto Condensed";
   font-size: 4vw;
+
+  @include at-least(m) {
+    font-size: 2vw;
+  }
 
   @include at-least(l) {
     font-size: 1em;
