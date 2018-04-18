@@ -1,0 +1,73 @@
+.spidey {
+  width: 50%;
+
+  @include at-least(m) {
+    width: 33.3333%;
+  }
+
+  @include at-least(l) {
+    width: 100%;
+  }
+}
+
+.error-body {
+  padding: 0;
+}
+
+.error-container {
+  padding: 5vh;
+
+  @include at-least(l) {
+    height: 100vh;
+    padding: 7vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.error-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $link-color;
+  font-size: 3vh;
+
+  &:hover {
+    color: lighten($link-color, 10%);
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  @include at-least(m) {
+    font-size: 3vh;
+  }
+
+  @include at-least(l){
+    font-size: 4vh;
+  }
+}
+
+.error-title {
+  font-size: 4vh;
+
+  @include at-least(m) {
+    font-size: 5vh;
+  }
+
+  @include at-least(l){
+    font-size: 7vh;
+  }
+}
+
+.error-sub {
+  font-size: 3vh;
+  margin-bottom: 1em;
+
+  @include at-least(m) {
+    font-size: 3vh;
+  }
+
+  @include at-least(l){
+    font-size: 5vh;
+  }
+}
