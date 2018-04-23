@@ -1,6 +1,13 @@
 ---
-title: Test Post
+title: Sitzplatzfinder
+duration: SEP 2014 -  JAN 2015
+team: 1
+tools:
+  - Axure
+  - Illustrator
 ---
+
+Have you ever been frustrated trying to find a seat on a public transport? Well, this concept might be a solution for that problem. With this app you can view which carriage has how many free seats left and you can get in the right carriage from the start without having to walk through the whole train.
 
 # Lorem Ipsum
 
