@@ -89,3 +89,16 @@
     color: $link-color;
   }
 }
+
+.card-tags {
+  padding-top: 1em;
+}
+
+.card-tags-name {
+  font-family: "Roboto Condensed";
+  color: $tag-color;
+}
+
+.tag-space {
+  padding-left: .5em;
+}

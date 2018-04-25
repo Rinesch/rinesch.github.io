@@ -1,7 +1,13 @@
 ---
 title: Sitzplatzfinder
+caption: "A concept for an app to find seats on public transport easily."
 duration: SEP 2014 -  JAN 2015
+time: SEP 2014
 team: 1
+tags:
+  - Axure
+  - Illustrator
+  - Usability
 tools:
   - Axure
   - Illustrator
