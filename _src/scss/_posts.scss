@@ -59,6 +59,11 @@
 
 .post-content {
   margin: 0 1em;
+
+  p {
+    margin-top: 0;
+    margin-bottom: 1.5em;
+  }
 }
 
 .tools-title {
@@ -104,6 +109,7 @@
 
 .tools-name {
   color: $text-color;
+  opacity: 0.7;
   text-transform: uppercase;
   font-family: "Roboto Condensed";
   font-size: 4vw;
