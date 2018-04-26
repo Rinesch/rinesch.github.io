@@ -20,8 +20,11 @@ permalink: /portfolio/
           <div class="card-content">
             <span class="card-title">{{ post.title }}</span>
             <p>{{ post.caption }}</p>
-            <div class="card-meta">
-              <span data-icon="date"></span>
+            <div class="card-tags">
+              <p class="card-tags-name">
+                <span data-icon="date"></span> {{ post.time }}
+                <span class="tag-space" data-icon="tag"></span> {{ post.tags | join: ', ' }}
+              </p>
             </div>
           </div>
 
