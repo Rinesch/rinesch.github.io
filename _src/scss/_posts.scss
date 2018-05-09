@@ -17,10 +17,16 @@
 .post {
   max-width: 40em;
   margin: 0 auto;
-  padding: 3em 0;
+  padding: 0;
+  padding-top: 1em;
+  padding-bottom: 3em;
   color: $text-color;
   line-height: 1.5;
   font-size: 125%;
+
+  @include at-least(m) {
+    padding: 3em 0;
+  };
 }
 
 .post-header {
