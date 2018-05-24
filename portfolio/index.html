@@ -14,7 +14,7 @@ permalink: /portfolio/
         <div class="card">
 
           <div class="card-image">
-            <img src="/assets/img/sample4.jpg" alt="sample" />
+            <img src="/assets/img/{{ post.title | downcase }}/hero.png" alt="{{ post.title }}" />
           </div>
 
           <div class="card-content">
@@ -46,7 +46,7 @@ permalink: /portfolio/
         <div class="card">
 
           <div class="card-image">
-            <img src="/assets/img/{{ post.title | downcase }}/hero.png" alt="sample" />
+            <img src="/assets/img/{{ post.title | downcase }}/hero.png" alt="{{ post.title }}" />
           </div>
 
           <div class="card-content">

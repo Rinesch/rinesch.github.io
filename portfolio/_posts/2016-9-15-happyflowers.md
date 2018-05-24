@@ -1,11 +1,17 @@
 ---
-title: Test Post 2
-duration: June 2016 -  May 2017
+title: Happyflowers
+caption: "An automated plant watering system with a web dashboard."
+duration: SEP 2016 - JAN 2017
+time: SEP 2016
 team: 2
-tools:
+tags:
   - Sketch
+  - RaspberryPi
+  - Haskell
+tools:
   - Atom
   - Github
+  - Sketch
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus suscipit sapien, vitae luctus libero rutrum vel. Nullam ut augue neque. Sed finibus feugiat libero porttitor tincidunt. Nullam augue justo, pellentesque a euismod et, bibendum a nibh. Nulla quis dolor commodo, imperdiet lorem at, porta tortor.

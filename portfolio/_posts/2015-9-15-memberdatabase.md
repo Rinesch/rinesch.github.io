@@ -1,5 +1,18 @@
 ---
-title: Test Post 4
+title: Memberdatabase
+caption: "A web-based database to manage information about a scout organisation's members."
+duration: SEP 2015 - JUN 2016
+time: SEP 2015
+team: 8
+tags:
+  - Baslasmiq
+  - AngularJS
+  - Database
+tools:
+  - SurveyMonkey
+  - Balsamiq
+  - Eclipse
+  - Github
 ---
 
 # Lorem Ipsum

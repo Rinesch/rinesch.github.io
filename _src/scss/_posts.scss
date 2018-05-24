@@ -1,10 +1,12 @@
 .post-background {
-  margin: 3vw 0;
+  margin: 0;
+  margin-top: 3vw;
   background-color: $post-background;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 
   @include at-least(l) {
-    margin: 3vw 10vw;
+    margin: 0 10vw;
+    margin-top: 3vw;
     border-radius: 5px;
   };
 }
@@ -97,7 +99,7 @@
   li {
     display: inline-block;
     float: none;
-    padding: 0 1em;
+    padding: 1em;
   }
 }
 
@@ -127,4 +129,16 @@
   @include at-least(l) {
     font-size: 1em;
   }
+}
+
+.backtotop-section {
+  margin: 2vw 10vw;
+}
+
+.backtotop-btn {
+  border-width: .3em;
+}
+
+.backtotop-label {
+  font-size: 1.5em;
 }
