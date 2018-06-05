@@ -18,9 +18,9 @@ tools:
   <img src="/assets/img/happyflowers/hf-header.png">
 </figure>
 
-This was another project as part of my studies at the University of Applied Sciences and Arts Northwestern Switzerland FHNW. It was like Webshop and Memberdatabase (MAKE LINKS), however with some big changes, the team size shrunk to two people and we only got one semester time to finish it.
+This was another project as part of my studies at the University of Applied Sciences and Arts Northwestern Switzerland FHNW. It was like <a class="link" href="/portfolio/webshop" target="_blank">Webshop</a> and <a class="link" href="/portfolio/memberdatabase" target="_blank">Memberdatabase</a>, however with some big changes, the team size shrunk to two people and we only got one semester time to finish it.
 
-This meant the scope of the project was smaller, but there was still a lot to do, which required very good planning. As part of the project we also created a promotional website to show what this project is about and you can find it here. (MAKE LINK)
+This meant the scope of the project was smaller, but there was still a lot to do, which required very good planning. As part of the project we also created a promotional website to show what this project is about and you can find it <a class="link" href="https://sacha.me/happyflowers/" target="_blank">here</a>.
 
 # Goal
 
