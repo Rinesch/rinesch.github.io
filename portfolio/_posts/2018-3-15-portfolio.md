@@ -18,7 +18,7 @@ tools:
   <img src="/assets/img/portfolio/pf-header.png">
 </figure>
 
-Ever since I learned about HTML and CSS the web was something that interested me a lot and I always wanted to create a personal website, but I never had a reason to create one until this project. During my studies a friend of mine was working on his own personal website and it made me only more curious to want to create one for myself. However due to all the other stuff I had to do during my studies, I put this idea on hold and now I finally did it.
+Ever since I learned about HTML and CSS, the web was something that interested me a lot and I always wanted to create a personal website, but I never had a reason to create one until this project. During my studies a friend of mine was working on his own personal website and it made me only more curious to want to create one for myself. However due to all the other stuff I had to do during my studies, I put this idea on hold and now I finally did it.
 
 # Goal
 
